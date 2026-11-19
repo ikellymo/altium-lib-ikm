@@ -8,8 +8,9 @@ Ian's Altium Designer component library: one symbol library and one footprint li
 | `Components.PcbLib` | 82 footprints, with embedded 3D models where available |
 
 Each symbol links to its footprint by name with no library path, so Altium finds it in any
-installed library. This folder is `X:\Libraries` on the Windows VM (`X:` = Parallels share
-`\\Mac\Electronics`); both files are installed in Altium from here.
+installed library. On the Windows VM this repo is cloned to
+`C:\Users\ikellymo\projects\altium-lib-ikm`, and both files are installed in Altium from that
+clone. Don't install or run git on a copy on the Parallels share (`X:`).
 
 ## Categories
 
@@ -71,8 +72,7 @@ of use. Keep this repo private.
 ## Workflow
 
 1. Edit and save the library in Altium.
-2. Commit and push (Windows: `git -C X:/Libraries ...`, or from the Mac side of the share).
-   Run git from one side at a time.
+2. Commit and push from the local clone, then pull on any other machine before editing there.
 3. Library files are binary: git cannot merge them, and every commit stores the whole file.
    Avoid editing on two machines at once. If the repo grows too large, split into one file
    per component.
