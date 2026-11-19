@@ -1,0 +1,10 @@
+# Altium automatic backups and temp files
+History/
+*.Zip
+__Previews/
+Project Logs*/
+*.~*
+*.LOCK
+# macOS (Parallels share)
+.DS_Store
+._*

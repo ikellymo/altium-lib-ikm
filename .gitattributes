@@ -1,0 +1,6 @@
+*.SchLib binary
+*.PcbLib binary
+*.IntLib binary
+*.step binary
+*.stp binary
+*.md text eol=lf
